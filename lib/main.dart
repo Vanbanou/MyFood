@@ -51,8 +51,17 @@ class _MyAppState extends State<MyApp> {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 211, 80, 4)),
+        colorScheme: ColorScheme.fromSeed(seedColor:const Color.fromARGB(255, 211, 80, 4)),
         useMaterial3: true,
+        // Definindo a fonte Rubik como a padrão
+        fontFamily: 'Rubik',
+        textTheme: const TextTheme(
+
+          
+        ).apply(
+          bodyColor: Colors.black,
+          displayColor: Colors.black,
+        ),
       ),
       home: const HomePage(),
     );

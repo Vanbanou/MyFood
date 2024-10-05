@@ -12,7 +12,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child: Center(child: Text("MyFood")),
+        child: Center(child: Text("MyFood, Aplicativo de comida", style: TextStyle(
+          fontSize: 40,
+          fontFamily: "Rubik"
+        ),)),
       ),
     );
   }
