@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:myfood/screens/home_page.dart';
+import 'package:myfood/pages/home_page.dart';
 
 void main() async {
   //Inicialização do native splash
@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> {
     super.initState();
 
     //Fechar o splash depois de três segundos
-    Future.delayed(const Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 2), () {
       FlutterNativeSplash.remove();
     });
   }
